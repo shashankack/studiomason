@@ -1,0 +1,87 @@
+.catalog-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+    
+    // Sidebar styling
+    .catalog-sidebar {
+      flex: 1;
+   
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      position: sticky;
+      top: 0; // This keeps the sidebar fixed at the top while scrolling
+    }
+    
+    // Main content
+    .catalog-content {
+      flex: 4;
+      padding: 2rem;
+      overflow-y: auto; // Enable vertical scrolling for the content only
+      height: 100vh;
+  
+      .catalog-grid1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); // 3 columns layout
+        gap: 1.5rem;
+      }
+  
+      .catalog-item {
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+  
+        .catalog-item-link {
+          display: block;
+  
+          .catalog-item-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .catalog-container {
+      flex-direction: column;
+  
+      .catalog-sidebar {
+        display: none; // Hide sidebar for smaller screens
+      }
+  
+      .catalog-content {
+        padding: 1rem;
+  
+        .catalog-grid1 {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem; // Reduced gap for tablet view
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalog-container {
+      .catalog-content {
+        padding: 0.5rem;
+  
+        .catalog-grid1 {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem; // Even smaller gap for mobile view
+        }
+      }
+    }
+  }
+  

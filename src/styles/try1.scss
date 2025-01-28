@@ -1,0 +1,131 @@
+.catalog-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+    
+    // Sidebar styling
+    .catalog-sidebar {
+      flex: 1;
+   
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      position: sticky;
+      top: 0; // This keeps the sidebar fixed at the top while scrolling
+    }
+    
+    // Main content
+    .catalog-content {
+      flex: 4;
+      padding: 2rem;
+      overflow-y: auto; // Enable vertical scrolling for the content only
+      height: 100vh;
+  
+      .catalog-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); // 3 columns layout
+        gap: 1.5rem;
+      }
+  
+      .catalog-item {
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+  
+        .catalog-item-link {
+          display: block;
+  
+          .catalog-item-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .catalog-container {
+      flex-direction: column;
+  
+      .catalog-sidebar {
+        display: none; // Hide sidebar for smaller screens
+      }
+  
+      .catalog-content {
+        padding: 1rem;
+  
+        .catalog-grid {
+          grid-template-columns: repeat(2, 1fr); // 2 columns on smaller screens
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalog-container {
+      .catalog-content {
+        padding: 0.5rem;
+  
+        .catalog-grid {
+          grid-template-columns: 2fr; // Single-column grid for mobile devices
+        }
+      }
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
+  
+  .skeleton {
+    background: #f6f7f8;
+    border-radius: 4px;
+    
+    .skeleton-image {
+      width: 100%;
+      padding-bottom: 100%;
+      background: linear-gradient(
+        to right,
+        #f6f7f8 8%,
+        #edeef1 18%,
+        #f6f7f8 33%
+      );
+      background-size: 800px 100%;
+      animation: shimmer 1.5s linear infinite forwards;
+    }
+    
+    &::before {
+      content: none;
+    }
+  }
+  
+  .catalog-item:not(.skeleton) {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

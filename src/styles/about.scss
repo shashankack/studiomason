@@ -1,0 +1,714 @@
+@font-face {
+    font-family: 'cool';
+    src: url('../../public/coolmain.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+  }
+
+.about-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: cool;
+    color: black;
+     background-color: #cfb49c;
+     overflow-x: hidden;
+   
+}
+
+
+.about-one{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 20vh;
+}
+
+
+
+
+
+.about-menu {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 2rem;
+    width: 40%;
+ 
+
+  
+  
+   
+  
+    > ul {
+      list-style-type:none; /* Keep the bullet points */
+      padding-left: 1rem; /* Add some padding to the left for spacing */
+     
+    }
+  
+    > ul li {
+      font-size: 2rem; /* Font size for the list items */
+      list-style-position: inside; /* Position the bullet inside the list item */
+      margin-left: 2.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+    
+    }
+  }
+  
+  /* Custom Bullet Size */
+  .about-menu ul li {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  
+  .about-menu ul li::before {
+    content: "";
+    display: inline-block;
+    width: 8px; /* Custom size for bullet */
+    height: 8px; /* Custom size for bullet */
+    margin-right: 10px; /* Space between bullet and text */
+    margin-bottom: 7px;
+    border-radius: 50%;
+    background-color: black; /* Bullet color */
+    font-style: italic;
+  }
+  
+
+.about-reach{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+ 
+    font-size: 2.5rem;
+    width: 25%;
+   
+
+    > ul {
+        list-style-type:none; /* Keep the bullet points */
+        padding-left: 1rem; /* Add some padding to the left for spacing */
+      }
+    
+      > ul li {
+        font-size: 2rem; /* Font size for the list items */
+        list-style-position: inside; /* Position the bullet inside the list item */
+        margin-left: 2.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+      }
+}
+
+
+.about-reach ul li {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 2rem;
+
+  }
+  
+  .about-reach ul li::before {
+    content: "";
+    display: inline-block;
+    width: 8px; /* Custom size for bullet */
+    height: 8px; /* Custom size for bullet */
+    margin-right: 10px; /* Space between bullet and text */
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: black; /* Bullet color */
+  }
+
+
+.about-two{
+   
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  
+}
+
+
+.logo-div{
+  width: 25%;
+  margin-left: 0.5rem;
+  margin-top: 5.5rem;
+
+  
+}
+
+
+.logo{
+
+
+
+
+ width: 300px;
+}
+
+@media (max-width: 1280px) {
+
+
+
+   
+    .about-main{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        font-family: cool;
+        color: black;
+      
+         width: 100%;
+       
+    }
+    
+    
+    .about-one{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        width: 100%;
+     
+       
+    }
+
+
+
+
+    @media (max-width: 1280px) {
+
+
+
+   
+    .about-main{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        font-family: cool;
+        color: black;
+      
+         width: 100%;
+       
+    }
+    
+    
+    .about-one{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        width: 100%;
+     
+        margin-top: 0vh;
+    }
+  
+    
+    
+    
+    
+   
+    
+    .about-reach{
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0rem;
+        font-size: 1rem;
+        width: 20%;
+    }
+    
+    
+    .about-two{
+       
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: end;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+    
+    
+    .about-three{
+      display: none;
+        height: auto;
+        
+        width: 100%;
+        
+    }
+
+
+
+
+
+
+
+.about-menu {
+         padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+       color: black;
+        font-size: 1rem;
+        padding-left: 0rem;
+        width: 100%;
+        margin-left: 0rem;
+     
+
+ 
+
+  > ul {
+    list-style-type:none; /* Keep the bullet points */
+    padding-left: 1rem; /* Add some padding to the left for spacing */
+   
+  }
+
+  > ul li {
+    font-size: 2rem; /* Font size for the list items */
+    list-style-position: inside; /* Position the bullet inside the list item */
+    margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+  
+  }
+}
+
+/* Custom Bullet Size */
+.about-menu ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.about-menu ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+.about-reach{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+ 
+  font-size: 1rem;
+  width: 100%;
+ 
+
+  > ul {
+      list-style-type:none; /* Keep the bullet points */
+      padding-left: 1rem; /* Add some padding to the left for spacing */
+    }
+  
+    > ul li {
+      font-size: 1.5rem; /* Font size for the list items */
+      list-style-position: inside; /* Position the bullet inside the list item */
+      margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+    }
+}
+
+
+.about-reach ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+}
+
+.about-reach ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+}
+
+
+.logo-div{
+ 
+  width: 100%;
+  margin-left: 2rem;
+  margin-top: 0rem;
+
+>img{
+  width: 200px;
+}
+  
+}
+  }
+  
+    
+    
+    
+    
+   
+    
+    .about-reach{
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0rem;
+        font-size: 1rem;
+        width: 20%;
+    }
+    
+    
+    .about-two{
+       
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: end;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        margin-top: 10rem;
+    }
+    
+    
+    .about-three{
+      display: none;
+        height: auto;
+        
+        width: 100%;
+        
+    }
+
+
+
+
+
+
+
+.about-menu {
+         padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+       color: black;
+        font-size: 1rem;
+        padding-left: 0rem;
+        width: 100%;
+        margin-left: 0rem;
+     
+
+ 
+
+  > ul {
+    list-style-type:none; /* Keep the bullet points */
+    padding-left: 1rem; /* Add some padding to the left for spacing */
+   
+  }
+
+  > ul li {
+    font-size: 2rem; /* Font size for the list items */
+    list-style-position: inside; /* Position the bullet inside the list item */
+    margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+  
+  }
+}
+
+/* Custom Bullet Size */
+.about-menu ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.about-menu ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+.about-reach{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+ 
+  font-size: 1rem;
+  width: 100%;
+ 
+
+  > ul {
+      list-style-type:none; /* Keep the bullet points */
+      padding-left: 1rem; /* Add some padding to the left for spacing */
+    }
+  
+    > ul li {
+      font-size: 1.5rem; /* Font size for the list items */
+      list-style-position: inside; /* Position the bullet inside the list item */
+      margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+    }
+}
+
+
+.about-reach ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+}
+
+.about-reach ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+}
+
+
+.logo-div{
+ 
+  width: 100%;
+  margin-left: 4rem;
+  margin-top: 0rem;
+
+>img{
+  width: 200px;
+}
+  
+}
+  }
+
+
+
+
+  @media (max-width: 1000px) {
+
+
+
+   
+    .about-main{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        font-family: cool;
+        color: black;
+      
+         width: 100%;
+       
+    }
+    
+    
+    .about-one{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        width: 100%;
+     
+        margin-top: 0vh;
+    }
+  
+    
+    
+    
+    
+   
+    
+    .about-reach{
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0rem;
+        font-size: 1rem;
+        width: 20%;
+    }
+    
+    
+    .about-two{
+       
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: end;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+    
+    
+    .about-three{
+      display: none;
+        height: auto;
+        
+        width: 100%;
+        
+    }
+
+
+
+
+
+
+
+.about-menu {
+         padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+       color: black;
+        font-size: 1rem;
+        padding-left: 0rem;
+        width: 100%;
+        margin-left: 0rem;
+     
+
+ 
+
+  > ul {
+    list-style-type:none; /* Keep the bullet points */
+    padding-left: 1rem; /* Add some padding to the left for spacing */
+   
+  }
+
+  > ul li {
+    font-size: 2rem; /* Font size for the list items */
+    list-style-position: inside; /* Position the bullet inside the list item */
+    margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+  
+  }
+}
+
+/* Custom Bullet Size */
+.about-menu ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.about-menu ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+.about-reach{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+ 
+  font-size: 1rem;
+  width: 100%;
+ 
+
+  > ul {
+      list-style-type:none; /* Keep the bullet points */
+      padding-left: 1rem; /* Add some padding to the left for spacing */
+    }
+  
+    > ul li {
+      font-size: 1.5rem; /* Font size for the list items */
+      list-style-position: inside; /* Position the bullet inside the list item */
+      margin-left: 0.5rem; /* Optional: Adjust left margin to create space between bullet and text */
+    }
+}
+
+
+.about-reach ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1.5rem;
+}
+
+.about-reach ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px; /* Custom size for bullet */
+  height: 8px; /* Custom size for bullet */
+  margin-right: 10px; /* Space between bullet and text */
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: black; /* Bullet color */
+}
+
+
+.logo-div{
+ 
+  width: 100%;
+  margin-left: 2rem;
+  margin-top: 0rem;
+
+>img{
+  width: 200px;
+}
+  
+}
+  }

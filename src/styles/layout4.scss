@@ -1,0 +1,63 @@
+.layout-four {
+    display: flex;
+    width: 320px;  // Increased from 280px
+    height: 320px;
+    overflow: hidden;
+    margin: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-four {
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease-in-out;
+}
+
+.image-container-four img {
+    width: 320px;  // Match container width
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS classes to handle the right-to-left sliding effect */
+.image-four-0 {
+    transform: translateY(0);
+}
+
+.image-four-1 {
+    transform: translateY(-320px);
+}
+
+.image-four-2 {
+    transform: translateY(-640px);
+}
+
+@media (max-width: 768px) {
+    .layout-four {
+        width: 200px;  // Slightly larger for tablet
+        margin: 0.25rem;
+    }
+
+    .image-container-four img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-four {
+        width: 180px;  // Larger for mobile
+        margin: 0.125rem;
+    }
+
+    .image-container-four img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 375px){
+    .layout-four{
+      width: 150px;
+      margin: 2px;
+  
+     }
+   }

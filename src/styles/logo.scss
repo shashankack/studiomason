@@ -1,0 +1,30 @@
+.logo-main{
+   
+    left: -3%;
+    top: 0%;
+    z-index: 3;
+    display: none;
+
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+}
+
+
+
+@media (max-width: 1280px) {
+   
+    
+   .logo{
+    display: flex;
+  
+    width: 20px;
+    height: auto;
+    
+    padding-top: 4.2rem;
+   }
+
+
+}

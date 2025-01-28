@@ -1,0 +1,63 @@
+.layout-three {
+    display: flex;
+    width: 320px;  // Increased from 280px
+  height: 320px;
+    overflow: hidden;
+    margin: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-three {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.image-container-three img {
+    width: 320px;  // Match container width
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS classes to handle the right-to-left sliding effect */
+.image-0 {
+    transform: translateX(0);
+}
+
+.image-1 {
+    transform: translateX(-320px);
+}
+
+.image-2 {
+    transform: translateX(-640px);
+}
+
+@media (max-width: 768px) {
+    .layout-three {
+        width: 200px;  // Slightly larger for tablet
+        margin: 0.25rem;
+    }
+
+    .image-container-three img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-three {
+        width: 180px;  // Larger for mobile
+        margin: 0.125rem;
+    }
+
+    .image-container-three img {
+        width: 320px;
+    }
+}
+
+
+@media (max-width: 375px){
+    .layout-three{
+      width: 150px;
+      margin: 2px;
+  
+     }
+   }

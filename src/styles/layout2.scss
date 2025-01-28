@@ -1,0 +1,62 @@
+.layout-two {
+    display: flex;
+    width: 320px;  // Increased from 280px
+    height: 320px;
+    overflow: hidden;
+    margin: 0.5rem;  // Consistent margin
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-two {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.image-container-two img {
+    width: 320px;  // Match container width
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS classes to handle the right-to-left sliding effect */
+.image-0 {
+    transform: translateX(0);
+}
+
+.image-1 {
+    transform: translateX(-320px);  // Adjusted to new width
+}
+
+.image-2 {
+    transform: translateX(-640px);  // Adjusted to new width
+}
+
+@media (max-width: 768px) {
+    .layout-two {
+        width: 200px;  // Slightly larger for tablet
+        margin: 0.25rem;
+    }
+
+    .image-container-two img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-two {
+        width: 180px;  // Larger for mobile
+        margin: 0.125rem;
+    }
+
+    .image-container-two img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 375px){
+    .layout-two{
+      width: 150px;
+      margin: 2px;
+  
+     }
+   }

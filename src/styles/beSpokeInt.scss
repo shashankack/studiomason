@@ -1,0 +1,201 @@
+.bespoke-int {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfb49c;
+    overflow: hidden;
+    .left-section {
+      padding: 4.5rem 2rem;
+      width: 50%;
+      height: auto;
+      
+      background-color: #cfb49c;
+      border-right: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      overflow-y: auto;
+      .logo {
+        height: auto;
+        margin-bottom: 0.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin: 0;
+      }
+      .intro {
+        font-size: 0.9rem;
+        color: #333;
+        line-height: 1.4;
+        margin: 0;
+      }
+      .project-image {
+        width: 100%;
+        height: auto;
+        max-height: 55vh;
+        object-fit: cover;
+        margin: 0.5rem 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      }
+      .enq-btn, .back-btn1 {
+        all: unset;
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #141313;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #403e3e;
+        }
+      }
+      .enq-btn {
+        width: 46vw;
+        height: 2rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .back-btn1 {
+        width: 46vw;
+        height: 2rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .right-section {
+      width: 50%;
+      height: 100vh;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      .project-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        p {
+          margin: 0;
+          color: #666;
+        }
+      }
+      .stages {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .stage {
+          border-bottom: 1px solid black;
+          padding: 0.75rem 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          &:last-child {
+            border-bottom: none;
+          }
+          img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0.5rem 0 4rem 0;
+          }
+          h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            color: #333;
+          }
+          p {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            margin: 0;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  // Mobile Styles
+  @media screen and (max-width: 768px) {
+    .bespoke-int {
+      flex-direction: column;
+      height: auto;
+      overflow-y: auto;
+      .left-section,
+      .right-section {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+      }
+      .left-section {
+        border-right: none;
+        border-bottom: 1px solid black;
+        h1 {
+          font-size: 1.75rem;
+          margin: 1rem 0;
+        }
+        .intro {
+          font-size: 0.9rem;
+        }
+        .enq-btn,
+        .back-btn1 {
+        
+          width: 100%;
+          height: 2rem;
+          font-size: 0.9rem;
+        }
+        .project-image {
+          max-height: 30vh;
+        }
+      }
+      .right-section {
+        .stages {
+          .stage {
+            padding: 1rem 0;
+            img {
+              width: 100%;
+              max-width: 250px;
+              margin: 0.5rem auto;
+            }
+            h3 {
+              font-size: 1.1rem;
+              margin: 0.75rem 0;
+            }
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Small mobile devices
+  @media screen and (max-width: 480px) {
+    .bespoke-int {
+      .left-section {
+        padding: 1rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .right-section {
+        padding: 1rem;
+      }
+    }
+  }
+  

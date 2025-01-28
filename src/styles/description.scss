@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'cool';
+    src: url('../../public/coolmain.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+  }
+  
+
+
+
+
+
+.description-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:  #cfb49c;
+    overflow: hidden;
+    height: auto;
+
+    font-family: "cool";
+    .description-image {
+      flex: 0.4; // Image section takes less width
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+     
+      img {
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      }
+    }
+  
+    .description-text {
+      flex: 0.6; // Text section takes more width
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+  
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        font-family: helvetica;
+      }
+
+      button {
+        margin-top: 2.5rem;
+        font-size: 2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+
+
+
+  @media (max-width: 1400px){
+    .description-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color:  #cfb49c;
+      overflow: hidden;
+      height: auto;
+  
+      font-family: "cool";
+      .description-image {
+        flex: 0.4; // Image section takes less width
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+       
+        img {
+          width: 500px;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+      }
+    
+      .description-text {
+        flex: 0.6; // Text section takes more width
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+  
+    
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        p {
+          font-size: 1rem;
+          line-height: -0.1em;
+          font-family: helvetica;
+        }
+  
+        button {
+          margin-top: 2.5rem;
+          font-size: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px){
+    .description-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color:  #cfb49c;
+      overflow: hidden;
+      height: auto;
+  
+      font-family: "cool";
+      .description-image {
+        flex: 0.4; // Image section takes less width
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+       
+        img {
+          width: 500px;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+      }
+    
+      .description-text {
+        flex: 0.6; // Text section takes more width
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+  
+    
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        p {
+          font-size: 0.8rem;
+          line-height: 1.6;
+          font-family: helvetica;
+        }
+  
+        button {
+          margin-top: 2.5rem;
+          font-size: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+
+
+  @media (max-width: 500px) {
+    .description-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color:  #cfb49c;
+      overflow: hidden;
+      width: 100vw;
+      height: auto;
+      padding-top: 7rem;
+  
+      font-family: "cool";
+      .description-image {
+        flex: 0.4; // Image section takes less width
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+       
+        img {
+          width: 100vw;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+      }
+    
+      .description-text {
+        flex: 0.6; // Text section takes more width
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+  
+    
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          font-family: helvetica;
+        }
+  
+        button {
+          margin-top: 2.5rem;
+          font-size: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+    
+  
+
+    
+
+
+      
+    }
+   

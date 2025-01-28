@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+}
+
+
+.client-one-main1 {
+    background-color: white;
+    display: flex;
+    font-family: helvetica;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: visible; /* Allows sticky positioning */
+    
+}
+
+.client-one-col1 {
+    position: sticky;
+    height: 100vh; /* Fixed to match the viewport height */
+    background-color: #e5e7eb; 
+    top: 0;
+    border-right: 0.5px solid black ;
+    overflow: scroll;
+ 
+}
+
+.client-one-col2 {
+    flex: 1;
+    background-color: #ffffff;
+   
+    height: 100%; /* Ensures consistent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid black ;
+   
+}
+
+.client-one-col2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-one-col3 {
+    flex: 1;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  
+}
+
+.client-one-col3-grid1, .client-one-col3-grid2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(18, 18, 18);
+    border-right: 0.5px solid black ;
+}
+
+.client-one-col3-grid1-1, 
+.client-one-col3-grid1-2, 
+.client-one-col3-grid1-3, 
+.client-one-col3-grid1-4 {
+    flex: 1; /* Ensures equal height for all child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292e38;
+}
+
+.client-one-col3-grid1-1 > img, 
+.client-one-col3-grid1-2 > img, 
+.client-one-col3-grid1-3 > img, 
+.client-one-col3-grid1-4 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-one-combined {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; /* Adjusted height */
+}
+
+.client-one-col2-raja {
+    display: flex;
+    flex-direction: row;
+    height: 100%; /* Matches the combined height */
+}
+
+
+@media (max-width: 500px) {
+    .client-one-col2-raja {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Matches the combined height */
+    }
+
+}

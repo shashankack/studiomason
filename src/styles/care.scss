@@ -1,0 +1,159 @@
+.care {
+    min-height: 100vh;
+    background-color: #e6d4c3;
+    padding: 4rem 2rem;
+  }
+  
+  .care-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .care-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: #fc6406;
+    }
+  }
+  
+  .care-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .care-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .care-instructions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .instruction-item {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: #fc6406;
+      }
+    }
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #666;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .care-instructions {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .care {
+      padding: 2rem 1rem;
+    }
+    
+    .care-container {
+      padding: 1.5rem;
+    }
+    
+    .care-title {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .care-intro {
+      padding: 1.5rem;
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+    .care-instructions {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .instruction-item {
+      padding: 1.5rem;
+      
+      h3 {
+        font-size: 1.2rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .care-title {
+      font-size: 1.8rem;
+    }
+    
+    .instruction-item {
+      padding: 1rem;
+    }
+  }
